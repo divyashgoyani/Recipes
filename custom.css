@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.image_responsive {
+    max-width: 100%;
+    transition: transform 0.2s;
+}
+
+.background {
+    background-image: url(Background\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.wrapper {
+    color: white;
+    text-align: center;
+    max-width: 900px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.wrapper h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.wrapper p {
+    margin-top: -1rem;
+    margin-bottom: 3.5rem;
+}
+
+.form .box {
+    text-align: center;
+    display: block;
+    width: 80%;
+    height: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius:30px;
+    padding: 0.3rem;
+    border: none;
+    outline: none;
+    transition: transform 0.2s;
+}
+
+.form button {
+    width: 160px;
+    height: 40px;
+    border-radius: 0.3rem;
+    line-height: 40px;
+    background-color: #00bab1;
+    color: white;
+    margin: 2rem auto 0rem;
+    border: none;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.form button:hover {
+    transform: scale(1.1);
+}
+.form .box:hover {
+    transform: scale(1.1);
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:stretch;
+    width: 90%;
+    margin: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product_item {
+    box-shadow: 8px 8px 12px -12px black;
+    cursor: pointer;
+    border-radius: 0.6rem;
+    float: none;
+    width: 30%;
+    max-width: 350px;
+    margin-left: 0.5rem;
+    margin: 10px;
+    overflow: hidden;
+    transition: all 0.2s linear;
+}
+
+.image_responsive {
+    width: 100%;
+    transition: all 0.2s linear;
+}
+
+.content-wrapper {
+    padding: 10px;
+}
+
+.content-wrapper p {
+    padding: 8px 0;
+}
+
+.product_item:hover {
+    box-shadow: 10px 10px 12px -10px black;
+}
+
+.image_responsive:hover {
+    transform: scale(1.04);
+    opacity: 0.7;
+}
+
+.product_item:first-of-type {
+    margin-left: 0;
+}
+
+.product_name{
+    padding: 15px 0;
+}
+
+@media screen and (max-width: 700px){
+    .product_item {
+        width: 100%;
+        float: none;
+        margin-bottom: 8rem;
+    }    
+}
