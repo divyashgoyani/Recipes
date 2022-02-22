@@ -79,9 +79,9 @@ nav ul li a:hover {
     }
     
     .nav_button ul {
-        background-color: #00bab1;
-        border-start-start-radius: 1rem;
-        border-end-end-radius: 1rem;
+        background-color: rgba(0, 0, 0, 0.90);
+        border-start-start-radius: 2rem;
+        border-end-end-radius: 2rem;
         display: none;
         text-align: center;
         width: 100%;
@@ -91,8 +91,11 @@ nav ul li a:hover {
     .nav_button ul li {
         display: block;
         width: 100%;
-        border-bottom: 1px solid #EAEAEB;
+        padding: 1px;
         margin: 0;
+    }
+    .line{
+        border-bottom: 3px solid #353535;
     }
     #toggle:checked + .nav_button ul {
         display: block;
@@ -102,5 +105,21 @@ nav ul li a:hover {
 @media screen and (max-width: 450px){
     label {
         margin: 10px -60px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    nav .logo {
+        font-size: 18px;
+        padding-top: 25px;
+        margin-left: -80px;
+    }
+}
+
+@media screen and (max-width: 280px){
+    nav .logo {
+        font-size: 18px;
+        padding-top: 25px;
+        margin-left: -80px;
     }
 }
